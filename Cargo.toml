@@ -1,0 +1,34 @@
+[package]
+name = "mwhash"
+version = "0.1.0"
+edition = "2021"
+description = "A simple, fast, non-cryptographic hash function for Rust"
+authors = ["horizonwiki <horizondebug@gmail.com>"]
+license = "Apache-2.0"
+keywords = ["hash", "checksum", "no_std", "embedded", "fast"]
+categories = ["algorithms", "no-std", "embedded"]
+readme = "README.md"
+repository = "https://github.com/horizonwiki/mwhash" 
+documentation = "https://docs.rs/mwhash"
+
+include = [
+    "src/",   
+    "tests/", 
+    "Cargo.toml",
+    "README.md",
+    "LICENSE"
+]
+
+[lib]
+name = "mwhash"
+path = "src/lib.rs"
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+panic = "abort" 
+
+[features]
+default = []
+std = []
