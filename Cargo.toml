@@ -8,7 +8,7 @@ license = "Apache-2.0"
 keywords = ["hash", "checksum", "no_std", "embedded", "fast"]
 categories = ["algorithms", "no-std", "embedded"]
 readme = "README.md"
-repository = "https://github.com/horizonwiki/mwhash" 
+repository = "https://github.com/meow-land/mwhash" 
 documentation = "https://docs.rs/mwhash"
 
 include = [
