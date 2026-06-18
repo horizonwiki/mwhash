@@ -32,7 +32,7 @@ Benchmark results (seed = `0x12345678`) are shown below:
 
 ```toml
 [dependencies]
-mwhash = "0.1.0"
+mwhash = "0.1.1"
 ```
 
 ---
